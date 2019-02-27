@@ -1,0 +1,15 @@
+.SignIn {
+    /* background-color: beige; */
+    padding : 2%;
+    width : 30%;
+    margin : auto;
+    margin-top : 3vw;
+    
+}
+
+.SignIn Button{
+    width: 100%;
+    /* margin: 1vw; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}

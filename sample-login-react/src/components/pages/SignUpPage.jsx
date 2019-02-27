@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import '../css/login.css';
+import '../css/signUp.css';
 
 class SignUpPage extends Component {
   render() {
     return (
-      <div className="Login">
+      <div className="SignIn">
 
         <div className="HeaderLogin">
           Sign up
@@ -29,9 +29,7 @@ class SignUpPage extends Component {
               <Button variant="primary" type="submit" id="button">
               Sign in
               </Button>
-              <Button variant="primary" type="submit" id="button">
-              Sign up
-              </Button>
+
             </div>
           </Form>
         </div>
