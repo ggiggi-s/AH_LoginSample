@@ -1,0 +1,23 @@
+.Login {
+    /* background-color: beige; */
+    padding : 2%;
+    width : 30%;
+    margin : auto;
+    margin-top : 3vw;
+    
+}
+
+.HeaderLogin {
+    font-family: 'Comic Sans MS';
+    font-size: 4vw;
+    text-align: center;
+    margin : 2vw;
+    
+}
+
+.Login Button{
+    width: 40%;
+    margin: 1vw;
+    /* margin-left: auto;
+    margin-right: auto; */
+}

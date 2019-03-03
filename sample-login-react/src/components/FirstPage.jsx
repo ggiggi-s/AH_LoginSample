@@ -1,30 +1,41 @@
 import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import './css/login.css';
 
 class FirstPage extends Component {
   render() {
     return (
-      <div>
-        <div style={{ margin: 100, width: '50vw' }}>
+      <div className="Login">
+
+        <div className="HeaderLogin">
+          Login into
+          <br />
+        </div>
+
+        <div>
           <Form>
             <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="username" />
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
             <Form.Group controlId="formBasicChecbox">
-              <Form.Check type="checkbox" label="Check me out" />
+              {/* <Form.Check type="checkbox" label="Check me out" /> */}
             </Form.Group>
-            <Button variant="primary" type="submit">
-            Submit
-            </Button>
+            <div>
+              <Button variant="primary" type="submit" id="button">
+              Sign in
+              </Button>
+              <Button variant="primary" type="submit" id="button">
+              Sign up
+              </Button>
+            </div>
           </Form>
         </div>
+
       </div>
     );
   }

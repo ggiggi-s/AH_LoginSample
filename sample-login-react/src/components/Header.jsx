@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {
-  Navbar, Form, FormControl, Nav, Button,
+  Navbar, Nav,
 } from 'react-bootstrap';
+
 
 class Header extends Component {
   render() {
@@ -13,10 +14,28 @@ class Header extends Component {
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
         </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-info">Search</Button>
-        </Form>
+
+        {/* <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Nav>
+            <Form inline>
+               <FormControl type="text"
+
+                placeholder="Search" className="mr-sm-2" />
+              <Button variant="outline-info">Search</Button>
+            </Form>
+          </Nav>
+        </Navbar.Collapse> */}
+
+
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+      Signed in as:
+            {' '}
+            <a href="#login">Mark Otto</a>
+          </Navbar.Text>
+        </Navbar.Collapse>
       </Navbar>
     );
   }
