@@ -5,10 +5,14 @@ import { Provider } from 'mobx-react'; // MobX 에서 사용하는 Provider
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import CounterStore from './store/counter';
+import PageStateStore from './store/pageStateStore';
+import User from './store/user';
 
 const counter = new CounterStore();
+const pageNavigation = new PageStateStore();
+const user = new User();
 ReactDOM.render(
-  <Provider counter={counter}>
+  <Provider counter={counter} pageNavigation={pageNavigation} user={user}>
     <App />
   </Provider>,
   document.getElementById('root'));

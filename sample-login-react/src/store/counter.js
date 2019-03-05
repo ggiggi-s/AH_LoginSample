@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { observable, action } from 'mobx';
 import axios from 'axios';
 
@@ -15,9 +14,9 @@ export default class CounterStore {
       .then((response) => {
         this.number = response.data;
       })
-      .catch((response) => {
-        console.log(response);
-        this.number = 0;
+      .catch(() => {
+        // console.log(response);
+        // this.number = 0;
       });
   }
 }

@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 import {
   Navbar, Nav,
 } from 'react-bootstrap';
+import { observer, inject } from 'mobx-react';
+import Button from 'react-bootstrap/Button';
+import HeaderNavigation from './HeaderNavigation';
 
-
+@inject('pageNavigation')
+@observer
 class Header extends Component {
   render() {
+    const { pageNavigation } = this.props;
     return (
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#home">Navbar</Navbar.Brand>
@@ -15,25 +20,13 @@ class Header extends Component {
           <Nav.Link href="#pricing">Pricing</Nav.Link>
         </Nav>
 
-        {/* <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <Nav>
-            <Form inline>
-               <FormControl type="text"
-
-                placeholder="Search" className="mr-sm-2" />
-              <Button variant="outline-info">Search</Button>
-            </Form>
-          </Nav>
-        </Navbar.Collapse> */}
-
 
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
       Signed in as:
             {' '}
-            <a href="#login">Mark Otto</a>
+            <Button variant="link" onClick={() => pageNavigation.setState('LOGIN')}><HeaderNavigation /></Button>
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>

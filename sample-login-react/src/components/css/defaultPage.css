@@ -1,0 +1,10 @@
+.DefaultClass{
+    font-family: 'Comic Sans MS';
+    color: white;    
+    text-align: center;
+    font-size: 5vw;
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524_1280.jpg');
+    background-size: cover;
+    height: 50vw;
+    
+}

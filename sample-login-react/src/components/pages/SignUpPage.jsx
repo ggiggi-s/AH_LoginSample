@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import './css/login.css';
+import '../css/login.css';
 
-class FirstPage extends Component {
+class SignUpPage extends Component {
   render() {
     return (
       <div className="Login">
 
         <div className="HeaderLogin">
-          Login into
+          Sign up
           <br />
         </div>
 
@@ -40,4 +40,4 @@ class FirstPage extends Component {
     );
   }
 }
-export default FirstPage;
+export default SignUpPage;

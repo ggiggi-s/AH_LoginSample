@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import FirstPage from './components/FirstPage';
+import Header from './components/header/Header';
+// import FirstPage from './components/FirstPage';
+// import SignUpPage from './components/SignUpPage';
+import PageNavigation from './PageNavigation';
 // import Counter from './components/Counter';
+// import Default from './components/pages/Default';
 
 class App extends Component {
   render() {
@@ -10,7 +13,11 @@ class App extends Component {
         <Header />
         <div className="body">
           {/* <Counter /> */}
-          <FirstPage />
+          {/* <Default /> */}
+
+          <PageNavigation />
+          {/* <FirstPage />
+          <SignUpPage /> */}
 
         </div>
       </div>
