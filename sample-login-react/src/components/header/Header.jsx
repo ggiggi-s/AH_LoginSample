@@ -25,8 +25,15 @@ class Header extends Component {
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
       Signed in as:
-            {' '}
-            <Button variant="link" onClick={() => pageNavigation.setState('LOGIN')}><HeaderNavigation /></Button>
+
+            <Button
+              className="HeaderUserName"
+              variant="link"
+              onClick={() => pageNavigation.setState('LOGIN')}
+            >
+              <HeaderNavigation />
+
+            </Button>
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>

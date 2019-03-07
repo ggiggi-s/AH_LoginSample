@@ -9,5 +9,5 @@ function HeaderNavigation(props) {
 }
 
 export default inject(({ user }) => ({
-  pageState: user.username,
+  username: user.username,
 }))(observer(HeaderNavigation));

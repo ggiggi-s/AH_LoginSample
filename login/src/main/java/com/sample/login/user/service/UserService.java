@@ -17,4 +17,8 @@ public class UserService {
     public User login(User user){
         return userRepository.findByUsernameAndPassword(user.getUsername(), user.getPassword()).orElseThrow(()-> new NoSuchException("없는 유저"));
     }
+
+    public User create(User user){
+        return userRepository.save(user);
+    }
 }
